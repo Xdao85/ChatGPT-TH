@@ -7,7 +7,30 @@
     <h1>Research Project</h1>
     <h2>Introduction</h2>
     <p>This research project aims to...</p>
+    
+    <h1>PDF Embed Example</h1>
+    <embed src="https://github.com/Xdao85/ChatGPT-THPT/blob/d6fc5db66c1f3fb900ca92667fcca6a29f42dcd0/2023_THPT_MH_V%C4%82N.pdf" width="800" height="1000" type='application/pdf'>
 
+
+  <script src="https://unpkg.com/mammoth/dist/mammoth.browser.min.js"></script>
+  <script>
+    var input = document.getElementById("fileInput");
+    input.addEventListener("change", function() {
+      var file = input.files[0];
+      var reader = new FileReader();
+      reader.readAsArrayBuffer(file);
+      reader.onload = function() {
+        mammoth.convertToHtml({arrayBuffer: reader.result})
+          .then(function(result) {
+            var html = result.value;
+            var div = document.getElementById("content");
+            div.innerHTML = html;
+          })
+          .done();
+      };
+    });
+  </script>
+    
     <h2>Research Information</h2>
     <ul>
       <li>Researcher name: </li>
@@ -25,10 +48,6 @@
       <button type="submit">Submit</button>
     </form>
 
-    <h1>PDF Embed Example</h1>
-    <embed src="https://github.com/Xdao85/ChatGPT-THPT/blob/d6fc5db66c1f3fb900ca92667fcca6a29f42dcd0/2023_THPT_MH_V%C4%82N.pdf" width="800" height="1000" type='application/pdf'>
-
-    
     <h2>Document Preview</h2>
     <iframe id="doc-preview" src="" frameborder="0"></iframe>
 
