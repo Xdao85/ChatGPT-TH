@@ -10,58 +10,7 @@
     
     <h1>PDF Embed Example</h1>
     
-    <embed src="https://github.com/Xdao85/ChatGPT-THPT/blob/d6fc5db66c1f3fb900ca92667fcca6a29f42dcd0/2023_THPT_MH_V%C4%82N.pdf" width="800" height="1000" type='application/pdf'>
-
-  <a href="https://zingnews.vn/">Zing</a> 
+    <a href="https://zingnews.vn/">Zing</a> 
     
-  <script src="https://unpkg.com/mammoth/dist/mammoth.browser.min.js"></script>
-  <script>
-    var input = document.getElementById("fileInput");
-    input.addEventListener("change", function() {
-      var file = input.files[0];
-      var reader = new FileReader();
-      reader.readAsArrayBuffer(file);
-      reader.onload = function() {
-        mammoth.convertToHtml({arrayBuffer: reader.result})
-          .then(function(result) {
-            var html = result.value;
-            var div = document.getElementById("content");
-            div.innerHTML = html;
-          })
-          .done();
-      };
-    });
-  </script>
-    
-    <h2>Research Information</h2>
-    <ul>
-      <li>Researcher name: </li>
-      <li>Research topic: </li>
-      <li>Research objective: </li>
-      <li>Methodology: </li>
-      <li>Results: </li>
-      <li>Conclusion: </li>
-    </ul>
-
-    <h2>Upload Document</h2>
-    <form method="post" enctype="multipart/form-data">
-      <label for="file-upload">Upload Word Document:</label>
-      <input type="file" name="file-upload" id="file-upload">
-      <button type="submit">Submit</button>
-    </form>
-
-    <h2>Document Preview</h2>
-    <iframe id="doc-preview" src="" frameborder="0"></iframe>
-
-    <script>
-      // Set the URL of the uploaded document to the iframe source
-      const fileUpload = document.getElementById('file-upload');
-      const docPreview = document.getElementById('doc-preview');
-      fileUpload.addEventListener('change', (event) => {
-        const file = event.target.files[0];
-        const fileUrl = URL.createObjectURL(file);
-        docPreview.src = fileUrl;
-      });
-    </script>
   </body>
 </html>
