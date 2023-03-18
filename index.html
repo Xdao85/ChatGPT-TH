@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Research Project</title>
+  </head>
+  <body>
+    <h1>Research Project</h1>
+    <h2>Introduction</h2>
+    <p>This research project aims to...</p>
+
+    <h2>Research Information</h2>
+    <ul>
+      <li>Researcher name: </li>
+      <li>Research topic: </li>
+      <li>Research objective: </li>
+      <li>Methodology: </li>
+      <li>Results: </li>
+      <li>Conclusion: </li>
+    </ul>
+
+    <h2>Upload Document</h2>
+    <form method="post" enctype="multipart/form-data">
+      <label for="file-upload">Upload Word Document:</label>
+      <input type="file" name="file-upload" id="file-upload">
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Document Preview</h2>
+    <iframe id="doc-preview" src="" frameborder="0"></iframe>
+
+    <script>
+      // Set the URL of the uploaded document to the iframe source
+      const fileUpload = document.getElementById('file-upload');
+      const docPreview = document.getElementById('doc-preview');
+      fileUpload.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        const fileUrl = URL.createObjectURL(file);
+        docPreview.src = fileUrl;
+      });
+    </script>
+  </body>
+</html>
