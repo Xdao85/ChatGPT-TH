@@ -38,14 +38,78 @@
       <div class="content-table flex-column">
         <div class="flex-row">
             <p class="text">
-                Dataset in Json format: </br>
-                {
-        "Prompt (Câu hỏi)": "Mark the letter A, B, C, or D on your answer sheet to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions.\n\nQuestion 1: \nA. Wash\\underline{ed}\t\nB. form\\underline{ed}\t\nC. turn\\underline{ed}\t\nD. boil\\underline{ed}\n\nQuestion 2: \nA. h\\underline{ou}se\t\nB. m\\underline{ou}th\t\nC. c\\underline{ou}ld\t\nD. f\\underline{ou}nd",
+
+            <h2> Dataset in Json format: </h2>
+
+            <table class="table">
+
+                    <!--Table head-->
+                    <thead>
+                      <tr>
+                        <th class="th-lg">Subject</th>
+                        <th class="th-lg">Word format</th>
+                        <th class="th-lg">Json format</th>
+                      </tr>
+                    </thead>
+                    <!--Table head-->
+
+                    <!--Table body-->
+                    <tbody>
+                      <tr>
+                        <th scope="row">English</th>
+                        <td>
+                            <p class="text-justify">
+                                Mark the letter A, B, C, or D on your answer sheet to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions.
+                                </br>
+                                    Question 1:</br>
+                                    A. Wash\underline{ed}
+                                </br>
+                                    B. form\underline{ed}
+                                </br>
+                                    C. turn\underline{ed}
+                                </br>
+                                    D. boil\underline{ed}
+                                </br>
+                                    Question 2:
+                                </br>
+                                    A. h\underline{ou}se
+                                </br>
+                                    B. m\underline{ou}th
+                                </br>
+                                    C. c\underline{ou}ld
+                                </br>
+                                    D. f\underline{ou}nd
+
+                            </p>
+                        </td>
+
+                          <td>
+                            <p class="text-justify">
+                            {
+        "Prompt (Câu hỏi)": "Mark the letter A, B, C, or D on your answer sheet to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions.
+                                </br>
+                                \n\nQuestion 1: </br>
+                                \nA. Wash\\underline{ed}\t\nB. form\\underline{ed}\t\nC. turn\\underline{ed}\t\nD. boil\\underline{ed}
+                                </br>
+                                \n\nQuestion 2: </br>
+                                \nA. h\\underline{ou}se\t\nB. m\\underline{ou}th\t\nC. c\\underline{ou}ld\t\nD. f\\underline{ou}nd",
         "ChatGPT’s answer (Câu trả lời)": ""
     }
+                            </p>
+                        </td>
+                      </tr>
+
+
+                    </tbody>
+                    <!--Table body-->
+                  </table>
+
+
+
           <h3>
-            <a href="database/Dataset_Question_English.rar" target="_blank">English Question 2019-2023</a>;
+            Download English Dataset: <a href="database/Dataset_Question_English.rar" target="_blank">English Question 2019-2023</a>;
           </h3>
+
               <div class="container">
                   <img src="img/ChatGPT-TH-1.png" style="width:300px">
               </div>
