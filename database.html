@@ -39,7 +39,123 @@
         <div class="flex-row">
             <p class="text">
 
-            <h2> Dataset in Json format: </h2>
+            <h2> VNHSGE Dataset: Mathematics Case</h2>
+
+            <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Field:</th>
+                        <th scope="col">Q</th>
+                        <th scope="col">F</th>
+                        <th scope="col">L</th>
+                        <th scope="col">T</th>
+                        <th scope="col">RC</th>
+                        <th scope="col">RA</th>
+                        <th scope="col">RE</th>
+                        <th scope="col">CC</th>
+                        <th scope="col">CA</th>
+                        <th scope="col">CE</th>
+                      </tr>
+                    </thead>
+                  </table>
+
+                 <table class="table">
+                    <tbody>
+                      <tr>
+                        <th scope="col">Q</th>
+                        <td scope="col"> Question Content</td>
+                        <td scope="col">Câu 1) Thể tích của khối lập phương cạnh 2a bằng:
+                            </br>
+                        A. 8a^3.
+                            </br>
+                        B. 2a^3.
+                            </br>
+                        C. a^3.
+                            </br>
+                        D. 6a^3.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="col">F</th>
+                        <td scope="col">Figure</td>
+                      </tr>
+                      <tr>
+                        <th scope="col">L</th>
+                        <td scope="col">Level</td>
+                        <td scope="col">
+                        K: Knowledge; C: Comprehension; A: Application; H: High Application
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="col">T</th>
+                        <td scope="col">Type</td>
+                        <td scope="col">
+                        M12F (M11A, M11B, M11C, M12A, M12B, M12C, M12D, M12E, M12G)
+                        </td>
+                      </tr>
+                        <tr>
+                            <th scope="col">RC</th>
+                            <td scope="col"> Reference Choice</td>
+                            <td scope="col">
+                            A (B, C, D)
+                            </td>
+                          </tr>
+                        <tr>
+                            <th scope="col">RA</th>
+                            <td scope="col"> Reference Answer</td>
+                            <td scope="col">
+                            A. 8a^3.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">RE</th>
+                            <td scope="col"> Reference Explanation</td>
+                            <td scope="col">
+                            Thể tích của khối lập phương có cạnh bằng 2a là: V=\left(2a\right)^3=8a^3.
+                            </td>
+                        </tr>
+                    <tr>
+                            <th scope="col">CC</th>
+                            <td scope="col"> ChatBot Choice</td>
+                            <td scope="col">
+                            ...
+                            </td>
+                          </tr>
+                        <tr>
+                            <th scope="col">CA</th>
+                            <td scope="col"> ChatBot Answer</td>
+                            <td scope="col">
+                            ....
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">CE</th>
+                            <td scope="col"> ChatBot Explanation</td>
+                            <td scope="col">
+                            ...
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+            <h3> Json format:</h3>
+             {
+                    "Question": "Câu 1) Thể tích của khối lập phương cạnh 2a bằng:\nA. 8a^3.\t\nB. 2a^3.\t\nC. a^3.\t\nD. 6a^3.",
+                    "Figure": "",
+                    "Level": "K",
+                    "Type": "M12F",
+                    "Reference\nChoice": "A",
+                    "Reference\nAnswer": "A. 8a^3.",
+                    "Reference\nExplanation": "Thể tích của khối lập phương có cạnh bằng 2a là: V=\\left(2a\\right)^3=8a^3.",
+                    "ChatBot \nChoice": "",
+                    "ChatBot \nAnswer": "",
+                    "ChatBot\nExplanation": ""
+                },
+
+            <h2> VNHSGE Dataset: Other Cases</h2>
+
 
             <table class="table">
 
